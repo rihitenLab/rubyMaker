@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		087CC551191F0E0E70CC6833 /* Pods_rubyMakerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD5A36604E67F9D95B6A743 /* Pods_rubyMakerTests.framework */; };
+		08C2B062EF488E5EAFF679F4 /* Pods_rubyMakerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ED77BBDEBB5C860DCE2C6EB /* Pods_rubyMakerUITests.framework */; };
 		2789EB4322624228006905B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2789EB4222624228006905B2 /* AppDelegate.swift */; };
 		2789EB4522624228006905B2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2789EB4422624228006905B2 /* FirstViewController.swift */; };
 		2789EB4722624228006905B2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2789EB4622624228006905B2 /* SecondViewController.swift */; };
@@ -15,6 +17,7 @@
 		2789EB4F22624229006905B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2789EB4D22624229006905B2 /* LaunchScreen.storyboard */; };
 		2789EB5A22624229006905B2 /* rubyMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2789EB5922624229006905B2 /* rubyMakerTests.swift */; };
 		2789EB6522624229006905B2 /* rubyMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2789EB6422624229006905B2 /* rubyMakerUITests.swift */; };
+		37D5CEC3B3B61A85177A7865 /* Pods_rubyMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F87B1BB54D09E61EA8F6AAD /* Pods_rubyMaker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		090B37296BABC5AA28E1344A /* Pods-rubyMakerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rubyMakerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rubyMakerTests/Pods-rubyMakerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0F87B1BB54D09E61EA8F6AAD /* Pods_rubyMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rubyMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26F3FF2F81C2D2FA14F1466A /* Pods-rubyMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rubyMaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-rubyMaker/Pods-rubyMaker.release.xcconfig"; sourceTree = "<group>"; };
 		2789EB3F22624228006905B2 /* rubyMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rubyMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2789EB4222624228006905B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2789EB4422624228006905B2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		2789EB6022624229006905B2 /* rubyMakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rubyMakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2789EB6422624229006905B2 /* rubyMakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rubyMakerUITests.swift; sourceTree = "<group>"; };
 		2789EB6622624229006905B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BD5A36604E67F9D95B6A743 /* Pods_rubyMakerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rubyMakerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F83FBD358AC74BA28E4F5F6 /* Pods-rubyMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rubyMaker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rubyMaker/Pods-rubyMaker.debug.xcconfig"; sourceTree = "<group>"; };
+		9ED77BBDEBB5C860DCE2C6EB /* Pods_rubyMakerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rubyMakerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B441F91A63912C3279709896 /* Pods-rubyMakerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rubyMakerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-rubyMakerTests/Pods-rubyMakerTests.release.xcconfig"; sourceTree = "<group>"; };
+		CEFC69B490C6A07B56230896 /* Pods-rubyMakerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rubyMakerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rubyMakerUITests/Pods-rubyMakerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F9ED40292B4534F5A70E35E5 /* Pods-rubyMakerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rubyMakerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-rubyMakerUITests/Pods-rubyMakerUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37D5CEC3B3B61A85177A7865 /* Pods_rubyMaker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				087CC551191F0E0E70CC6833 /* Pods_rubyMakerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08C2B062EF488E5EAFF679F4 /* Pods_rubyMakerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				2789EB5822624229006905B2 /* rubyMakerTests */,
 				2789EB6322624229006905B2 /* rubyMakerUITests */,
 				2789EB4022624228006905B2 /* Products */,
+				3FAD06DB343696CB9157E965 /* Pods */,
+				FAFF76F40C4F5FF3F9BF0479 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,29 @@
 			path = rubyMakerUITests;
 			sourceTree = "<group>";
 		};
+		3FAD06DB343696CB9157E965 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F83FBD358AC74BA28E4F5F6 /* Pods-rubyMaker.debug.xcconfig */,
+				26F3FF2F81C2D2FA14F1466A /* Pods-rubyMaker.release.xcconfig */,
+				090B37296BABC5AA28E1344A /* Pods-rubyMakerTests.debug.xcconfig */,
+				B441F91A63912C3279709896 /* Pods-rubyMakerTests.release.xcconfig */,
+				CEFC69B490C6A07B56230896 /* Pods-rubyMakerUITests.debug.xcconfig */,
+				F9ED40292B4534F5A70E35E5 /* Pods-rubyMakerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FAFF76F40C4F5FF3F9BF0479 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F87B1BB54D09E61EA8F6AAD /* Pods_rubyMaker.framework */,
+				7BD5A36604E67F9D95B6A743 /* Pods_rubyMakerTests.framework */,
+				9ED77BBDEBB5C860DCE2C6EB /* Pods_rubyMakerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2789EB6922624229006905B2 /* Build configuration list for PBXNativeTarget "rubyMaker" */;
 			buildPhases = (
+				6F50E94EE4F368F539BE7AB1 /* [CP] Check Pods Manifest.lock */,
 				2789EB3B22624228006905B2 /* Sources */,
 				2789EB3C22624228006905B2 /* Frameworks */,
 				2789EB3D22624228006905B2 /* Resources */,
+				7401EADFB3E1007AC84F423E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2789EB6C22624229006905B2 /* Build configuration list for PBXNativeTarget "rubyMakerTests" */;
 			buildPhases = (
+				D74FE17AA593CB1A681C8A04 /* [CP] Check Pods Manifest.lock */,
 				2789EB5122624229006905B2 /* Sources */,
 				2789EB5222624229006905B2 /* Frameworks */,
 				2789EB5322624229006905B2 /* Resources */,
@@ -170,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2789EB6F22624229006905B2 /* Build configuration list for PBXNativeTarget "rubyMakerUITests" */;
 			buildPhases = (
+				772C4F29517DC14DFBF9BF77 /* [CP] Check Pods Manifest.lock */,
 				2789EB5C22624229006905B2 /* Sources */,
 				2789EB5D22624229006905B2 /* Frameworks */,
 				2789EB5E22624229006905B2 /* Resources */,
@@ -253,6 +297,101 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F50E94EE4F368F539BE7AB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rubyMaker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7401EADFB3E1007AC84F423E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-rubyMaker/Pods-rubyMaker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rubyMaker/Pods-rubyMaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		772C4F29517DC14DFBF9BF77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rubyMakerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D74FE17AA593CB1A681C8A04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rubyMakerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2789EB3B22624228006905B2 /* Sources */ = {
@@ -434,6 +573,7 @@
 		};
 		2789EB6A22624229006905B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F83FBD358AC74BA28E4F5F6 /* Pods-rubyMaker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +591,7 @@
 		};
 		2789EB6B22624229006905B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26F3FF2F81C2D2FA14F1466A /* Pods-rubyMaker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +609,7 @@
 		};
 		2789EB6D22624229006905B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 090B37296BABC5AA28E1344A /* Pods-rubyMakerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +630,7 @@
 		};
 		2789EB6E22624229006905B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B441F91A63912C3279709896 /* Pods-rubyMakerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +651,7 @@
 		};
 		2789EB7022624229006905B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEFC69B490C6A07B56230896 /* Pods-rubyMakerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +671,7 @@
 		};
 		2789EB7122624229006905B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9ED40292B4534F5A70E35E5 /* Pods-rubyMakerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
