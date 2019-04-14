@@ -8,6 +8,24 @@
 
 import Foundation
 
-class FuriganaApiRequestEntity {
+struct FuriganaApiRequestEntity: ApiRequestEntity {
+    let appid: String
+    let sentence: String
+    let grade: Int?
     
+    init(appid: String, sentence: String, grade: Int? = nil) {
+        self.appid = appid
+        self.sentence = sentence
+        self.grade = grade
+    }
+    
+    func convToParameter() -> [String : Any] {
+        var parameter: [String:Any] = [:]
+        parameter["appid"] = appid
+        parameter["sentence"] = sentence
+        if let _ = grade {
+            parameter["grade"] = grade!
+        }
+        return parameter
+    }
 }

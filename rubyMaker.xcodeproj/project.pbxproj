@@ -17,6 +17,9 @@
 		270D62B82262517800071F33 /* ConvertToFuriganaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D62B72262517800071F33 /* ConvertToFuriganaModel.swift */; };
 		270D62BA2262526400071F33 /* ConvertLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D62B92262526400071F33 /* ConvertLogModel.swift */; };
 		270D62BC226254FF00071F33 /* RealmAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D62BB226254FF00071F33 /* RealmAccessor.swift */; };
+		270D62BF22631ECF00071F33 /* ServerApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D62BE22631ECF00071F33 /* ServerApi.swift */; };
+		270D62C122632F8800071F33 /* ApiRequestEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D62C022632F8800071F33 /* ApiRequestEntity.swift */; };
+		270D62D12263506E00071F33 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 270D62D02263506E00071F33 /* Settings.bundle */; };
 		2789EB4322624228006905B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2789EB4222624228006905B2 /* AppDelegate.swift */; };
 		2789EB4522624228006905B2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2789EB4422624228006905B2 /* FirstViewController.swift */; };
 		2789EB4722624228006905B2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2789EB4622624228006905B2 /* SecondViewController.swift */; };
@@ -57,6 +60,9 @@
 		270D62B72262517800071F33 /* ConvertToFuriganaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertToFuriganaModel.swift; sourceTree = "<group>"; };
 		270D62B92262526400071F33 /* ConvertLogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertLogModel.swift; sourceTree = "<group>"; };
 		270D62BB226254FF00071F33 /* RealmAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmAccessor.swift; sourceTree = "<group>"; };
+		270D62BE22631ECF00071F33 /* ServerApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerApi.swift; sourceTree = "<group>"; };
+		270D62C022632F8800071F33 /* ApiRequestEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestEntity.swift; sourceTree = "<group>"; };
+		270D62D02263506E00071F33 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		2789EB3F22624228006905B2 /* rubyMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rubyMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2789EB4222624228006905B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2789EB4422624228006905B2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +166,7 @@
 				270D62B12262511900071F33 /* ConvertLogEntity.swift */,
 				270D62B32262512600071F33 /* FuriganaApiRequestEntity.swift */,
 				270D62B52262513500071F33 /* FuriganaApiResponseEntity.swift */,
+				270D62C022632F8800071F33 /* ApiRequestEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -167,6 +174,7 @@
 		270D62AA2262507900071F33 /* ServerApi */ = {
 			isa = PBXGroup;
 			children = (
+				270D62BD22631EBA00071F33 /* Common */,
 				270D62AC226250D000071F33 /* FuriganaService */,
 			);
 			path = ServerApi;
@@ -187,6 +195,24 @@
 				270D62AD226250EB00071F33 /* FuriganaApi.swift */,
 			);
 			path = FuriganaService;
+			sourceTree = "<group>";
+		};
+		270D62BD22631EBA00071F33 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				270D62BE22631ECF00071F33 /* ServerApi.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		270D62C42263435700071F33 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				270D62D02263506E00071F33 /* Settings.bundle */,
+				2789EB4B22624229006905B2 /* Assets.xcassets */,
+				2789EB5022624229006905B2 /* Info.plist */,
+			);
+			path = resource;
 			sourceTree = "<group>";
 		};
 		2789EB3622624228006905B2 = {
@@ -214,11 +240,10 @@
 		2789EB4122624228006905B2 /* rubyMaker */ = {
 			isa = PBXGroup;
 			children = (
+				270D62C42263435700071F33 /* resource */,
 				270D62A022624D6200071F33 /* Model */,
 				270D629D22624D1F00071F33 /* View */,
 				2789EB4222624228006905B2 /* AppDelegate.swift */,
-				2789EB4B22624229006905B2 /* Assets.xcassets */,
-				2789EB5022624229006905B2 /* Info.plist */,
 			);
 			path = rubyMaker;
 			sourceTree = "<group>";
@@ -276,6 +301,7 @@
 				2789EB3C22624228006905B2 /* Frameworks */,
 				2789EB3D22624228006905B2 /* Resources */,
 				7401EADFB3E1007AC84F423E /* [CP] Embed Pods Frameworks */,
+				270D62C52263477200071F33 /* LicensePlist */,
 			);
 			buildRules = (
 			);
@@ -372,6 +398,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270D62D12263506E00071F33 /* Settings.bundle in Resources */,
 				2789EB4F22624229006905B2 /* LaunchScreen.storyboard in Resources */,
 				2789EB4C22624229006905B2 /* Assets.xcassets in Resources */,
 				2789EB4A22624228006905B2 /* Main.storyboard in Resources */,
@@ -395,6 +422,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		270D62C52263477200071F33 /* LicensePlist */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = LicensePlist;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $CONFIGURATION = \"Debug\" ]; then\ncd $SRCROOT\n./Pods/LicensePlist/license-plist --output-path $PRODUCT_NAME/resource/Settings.bundle\nfi\n";
+		};
 		6F50E94EE4F368F539BE7AB1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -429,6 +474,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -437,6 +483,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -497,6 +544,8 @@
 				270D62BC226254FF00071F33 /* RealmAccessor.swift in Sources */,
 				2789EB4722624228006905B2 /* SecondViewController.swift in Sources */,
 				2789EB4322624228006905B2 /* AppDelegate.swift in Sources */,
+				270D62BF22631ECF00071F33 /* ServerApi.swift in Sources */,
+				270D62C122632F8800071F33 /* ApiRequestEntity.swift in Sources */,
 				270D62B22262511900071F33 /* ConvertLogEntity.swift in Sources */,
 				2789EB4522624228006905B2 /* FirstViewController.swift in Sources */,
 				270D62B82262517800071F33 /* ConvertToFuriganaModel.swift in Sources */,
@@ -681,7 +730,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = rubyMaker/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/rubyMaker/resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -700,7 +749,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = rubyMaker/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/rubyMaker/resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

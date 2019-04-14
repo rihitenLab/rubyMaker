@@ -7,7 +7,32 @@
 //
 
 import Foundation
+import SWXMLHash
 
-class FuriganaApi {
+class FuriganaApi: ServerApi {
     
+    init() {
+        super.init(url: URL(string: "https://jlp.yahooapis.jp/FuriganaService/V1/furigana")!)
+    }
+    
+    func convertToFurigana(sentence: String, grade: Int?,
+                           success: @escaping (String?) -> Void, failer: @escaping (Error) -> Void) {
+        let request = FuriganaApiRequestEntity(appid: "", sentence: sentence, grade: grade)
+        super.get(parameters: request.convToParameter()) {
+            response in
+            switch response.result {
+            case .success :
+                let xml = SWXMLHash.parse(response.data!)
+                do {
+                    let responseEntity: FuriganApiResponseEntity = try xml.value()
+                    success(responseEntity.getFurigana())
+                } catch {
+                    // TODO: error
+                }
+            case .failure(let error) :
+                // TODO: error
+                break
+            }
+        }
+    }
 }

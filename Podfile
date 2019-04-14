@@ -7,7 +7,9 @@ target 'rubyMaker' do
   
     pod 'Alamofire'
     pod 'RealmSwift'
-
+    pod 'SWXMLHash', '~> 4.7.0'
+    pod 'LicensePlist'
+    
   # Pods for rubyMaker
 
   target 'rubyMakerTests' do

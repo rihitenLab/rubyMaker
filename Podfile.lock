@@ -1,26 +1,34 @@
 PODS:
   - Alamofire (4.7.3)
+  - LicensePlist (1.9.1)
   - Realm (3.11.1):
     - Realm/Headers (= 3.11.1)
   - Realm/Headers (3.11.1)
   - RealmSwift (3.11.1):
     - Realm (= 3.11.1)
+  - SWXMLHash (4.7.4)
 
 DEPENDENCIES:
   - Alamofire
+  - LicensePlist
   - RealmSwift
+  - SWXMLHash (~> 4.7.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - LicensePlist
     - Realm
     - RealmSwift
+    - SWXMLHash
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  LicensePlist: c39d3fd5cd100f52e97463d44426f2608a42f782
   Realm: 037c5919b9ceb59d6beed5d3b031096856b119b3
   RealmSwift: c9580133e73ef40ed340401af2dbc9a5790dfea7
+  SWXMLHash: b35739a5cfd915c3b482977aa720d6708e260a90
 
-PODFILE CHECKSUM: de7118386ba43b175e40d20bfda6507b9cdb7fdf
+PODFILE CHECKSUM: a6e9db588b284c6eb790e3ce262edc53380eecff
 
 COCOAPODS: 1.5.3
