@@ -16,11 +16,16 @@ class ServerApi {
         self.url = url
     }
     
-    internal func get(parameters:[String : Any],
-                      comoleted: ((DataResponse<Data>) -> Void)?) {
+    func get(parameters:[String : Any],
+                      success: @escaping (Data?) -> Void, failure: @escaping (Error) -> Void) {
         Alamofire.request(url, method: .get, parameters: parameters).validate(statusCode: 200..<300).responseData() {
             response in
-            comoleted?(response)
+            switch response.result {
+            case .success:
+                success(response.data)
+            case .failure(let error):
+                failure(error)
+            }
         }
     }
     

@@ -16,23 +16,20 @@ class FuriganaApi: ServerApi {
     }
     
     func convertToFurigana(sentence: String, grade: Int?,
-                           success: @escaping (String?) -> Void, failer: @escaping (Error) -> Void) {
+                           success: @escaping (String) -> Void, failure: @escaping (Error?) -> Void) {
         let request = FuriganaApiRequestEntity(appid: "", sentence: sentence, grade: grade)
-        super.get(parameters: request.convToParameter()) {
-            response in
-            switch response.result {
-            case .success :
-                let xml = SWXMLHash.parse(response.data!)
+        super.get(parameters: request.convToParameter(),
+            success: { data in
+                let xml = SWXMLHash.parse(data!)
                 do {
                     let responseEntity: FuriganApiResponseEntity = try xml.value()
                     success(responseEntity.getFurigana())
                 } catch {
-                    // TODO: error
+                    failure(nil)
                 }
-            case .failure(let error) :
-                // TODO: error
-                break
-            }
-        }
+            },
+            failure: { error in
+                failure(error)
+            })
     }
 }

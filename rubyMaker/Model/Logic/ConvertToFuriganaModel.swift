@@ -8,6 +8,31 @@
 
 import Foundation
 
-class ConvertToFuriganaModel {
+protocol ConvertToFuriganaDelegate {
+    func onSuccess(furigana: String)
+    func onFailure(error: Error?)
+}
+
+class ConvertToFuriganaModel: BaseModel<ConvertToFuriganaDelegate> {
+    
+    func convertToFurigana(sentence: String) {
+        let onSuccess: (String) -> Void = {
+            furigana in
+            for (_, delegate) in super.delegates {
+                delegate.onSuccess(furigana: sentence)
+            }
+        }
+        
+        let onFailure: (Error?) -> Void = {
+            error in
+            for (_, delegate) in super.delegates {
+                delegate.onFailure(error: error)
+            }
+        }
+        
+        let api = FuriganaApi()
+        api.convertToFurigana(sentence: sentence, grade: 1, success: onSuccess, failure: onFailure)
+    }
+    
     
 }

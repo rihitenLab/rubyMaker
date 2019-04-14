@@ -20,6 +20,7 @@
 		270D62BF22631ECF00071F33 /* ServerApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D62BE22631ECF00071F33 /* ServerApi.swift */; };
 		270D62C122632F8800071F33 /* ApiRequestEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D62C022632F8800071F33 /* ApiRequestEntity.swift */; };
 		270D62D12263506E00071F33 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 270D62D02263506E00071F33 /* Settings.bundle */; };
+		270D62D322636CD700071F33 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D62D222636CD700071F33 /* BaseModel.swift */; };
 		2789EB4322624228006905B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2789EB4222624228006905B2 /* AppDelegate.swift */; };
 		2789EB4522624228006905B2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2789EB4422624228006905B2 /* FirstViewController.swift */; };
 		2789EB4722624228006905B2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2789EB4622624228006905B2 /* SecondViewController.swift */; };
@@ -63,6 +64,7 @@
 		270D62BE22631ECF00071F33 /* ServerApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerApi.swift; sourceTree = "<group>"; };
 		270D62C022632F8800071F33 /* ApiRequestEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestEntity.swift; sourceTree = "<group>"; };
 		270D62D02263506E00071F33 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		270D62D222636CD700071F33 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		2789EB3F22624228006905B2 /* rubyMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rubyMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2789EB4222624228006905B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2789EB4422624228006905B2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			children = (
 				270D62B72262517800071F33 /* ConvertToFuriganaModel.swift */,
 				270D62B92262526400071F33 /* ConvertLogModel.swift */,
+				270D62D222636CD700071F33 /* BaseModel.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -543,6 +546,7 @@
 			files = (
 				270D62BC226254FF00071F33 /* RealmAccessor.swift in Sources */,
 				2789EB4722624228006905B2 /* SecondViewController.swift in Sources */,
+				270D62D322636CD700071F33 /* BaseModel.swift in Sources */,
 				2789EB4322624228006905B2 /* AppDelegate.swift in Sources */,
 				270D62BF22631ECF00071F33 /* ServerApi.swift in Sources */,
 				270D62C122632F8800071F33 /* ApiRequestEntity.swift in Sources */,
