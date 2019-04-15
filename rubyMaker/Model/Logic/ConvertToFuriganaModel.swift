@@ -19,7 +19,7 @@ class ConvertToFuriganaModel: BaseModel<ConvertToFuriganaDelegate> {
         let onSuccess: (String) -> Void = {
             furigana in
             for (_, delegate) in super.delegates {
-                delegate.onSuccess(furigana: sentence)
+                delegate.onSuccess(furigana: furigana)
             }
         }
         
