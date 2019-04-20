@@ -15,7 +15,6 @@
 		270D62B42262512600071F33 /* FuriganaApiRequestEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D62B32262512600071F33 /* FuriganaApiRequestEntity.swift */; };
 		270D62B62262513500071F33 /* FuriganaApiResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D62B52262513500071F33 /* FuriganaApiResponseEntity.swift */; };
 		270D62B82262517800071F33 /* ConvertToFuriganaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D62B72262517800071F33 /* ConvertToFuriganaModel.swift */; };
-		270D62BA2262526400071F33 /* ConvertLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D62B92262526400071F33 /* ConvertLogModel.swift */; };
 		270D62BC226254FF00071F33 /* RealmAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D62BB226254FF00071F33 /* RealmAccessor.swift */; };
 		270D62BF22631ECF00071F33 /* ServerApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D62BE22631ECF00071F33 /* ServerApi.swift */; };
 		270D62C122632F8800071F33 /* ApiRequestEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D62C022632F8800071F33 /* ApiRequestEntity.swift */; };
@@ -60,7 +59,6 @@
 		270D62B32262512600071F33 /* FuriganaApiRequestEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuriganaApiRequestEntity.swift; sourceTree = "<group>"; };
 		270D62B52262513500071F33 /* FuriganaApiResponseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuriganaApiResponseEntity.swift; sourceTree = "<group>"; };
 		270D62B72262517800071F33 /* ConvertToFuriganaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertToFuriganaModel.swift; sourceTree = "<group>"; };
-		270D62B92262526400071F33 /* ConvertLogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertLogModel.swift; sourceTree = "<group>"; };
 		270D62BB226254FF00071F33 /* RealmAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmAccessor.swift; sourceTree = "<group>"; };
 		270D62BE22631ECF00071F33 /* ServerApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerApi.swift; sourceTree = "<group>"; };
 		270D62C022632F8800071F33 /* ApiRequestEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestEntity.swift; sourceTree = "<group>"; };
@@ -159,7 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				270D62B72262517800071F33 /* ConvertToFuriganaModel.swift */,
-				270D62B92262526400071F33 /* ConvertLogModel.swift */,
 				270D62D222636CD700071F33 /* BaseModel.swift */,
 			);
 			path = Logic;
@@ -559,7 +556,6 @@
 				270D62B82262517800071F33 /* ConvertToFuriganaModel.swift in Sources */,
 				270D62B42262512600071F33 /* FuriganaApiRequestEntity.swift in Sources */,
 				270D62B62262513500071F33 /* FuriganaApiResponseEntity.swift in Sources */,
-				270D62BA2262526400071F33 /* ConvertLogModel.swift in Sources */,
 				270D62B02262510200071F33 /* ConvertLogAccessor.swift in Sources */,
 				270D62AE226250EB00071F33 /* FuriganaApi.swift in Sources */,
 			);
