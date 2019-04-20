@@ -10,7 +10,11 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-    let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    @IBOutlet private weak var textField: UITextField!
+    
+    @IBOutlet private weak var label: UILabel!
+    
+    var convertToFuriganaModel: ConvertToFuriganaModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,19 +22,28 @@ class FirstViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        appDelegate.convertToFuriganaModel.addDelegate(className: String(describing: type(of: self)), delegate: self)
+        
+        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        self.convertToFuriganaModel = appDelegate.convertToFuriganaModel
+        self.convertToFuriganaModel.addDelegate(className: String(describing: type(of: self)), delegate: self)
     }
 
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        appDelegate.convertToFuriganaModel.removeDelegate(className: String(describing: type(of: self)))
+        self.convertToFuriganaModel.removeDelegate(className: String(describing: type(of: self)))
+    }
+    
+    @IBAction func convFurigana() {
+        if let text = self.textField.text {
+            self.convertToFuriganaModel.convertToFurigana(sentence: text)
+        }
     }
 
 }
 
 extension FirstViewController: ConvertToFuriganaDelegate {
     func onSuccess(furigana: String) {
-        
+        self.label.text = furigana
     }
     
     func onFailure(error: Error?) {

@@ -23,7 +23,6 @@
 		270D62D7226AD6E200071F33 /* FuriganaApi.plist in Resources */ = {isa = PBXBuildFile; fileRef = 270D62D6226AD6E200071F33 /* FuriganaApi.plist */; };
 		2789EB4322624228006905B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2789EB4222624228006905B2 /* AppDelegate.swift */; };
 		2789EB4522624228006905B2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2789EB4422624228006905B2 /* FirstViewController.swift */; };
-		2789EB4722624228006905B2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2789EB4622624228006905B2 /* SecondViewController.swift */; };
 		2789EB4A22624228006905B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2789EB4822624228006905B2 /* Main.storyboard */; };
 		2789EB4C22624229006905B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2789EB4B22624229006905B2 /* Assets.xcassets */; };
 		2789EB4F22624229006905B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2789EB4D22624229006905B2 /* LaunchScreen.storyboard */; };
@@ -68,7 +67,6 @@
 		2789EB3F22624228006905B2 /* rubyMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rubyMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2789EB4222624228006905B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2789EB4422624228006905B2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		2789EB4622624228006905B2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		2789EB4922624228006905B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2789EB4B22624229006905B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2789EB4E22624229006905B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				2789EB4422624228006905B2 /* FirstViewController.swift */,
-				2789EB4622624228006905B2 /* SecondViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -546,7 +543,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				270D62BC226254FF00071F33 /* RealmAccessor.swift in Sources */,
-				2789EB4722624228006905B2 /* SecondViewController.swift in Sources */,
 				270D62D322636CD700071F33 /* BaseModel.swift in Sources */,
 				2789EB4322624228006905B2 /* AppDelegate.swift in Sources */,
 				270D62BF22631ECF00071F33 /* ServerApi.swift in Sources */,
