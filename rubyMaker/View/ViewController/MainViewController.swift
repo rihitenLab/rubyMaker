@@ -8,10 +8,12 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class MainViewController: UIViewController {
     
-    @IBOutlet private weak var textField: UITextField!
+    // 変換元文字列
+    @IBOutlet private weak var textView: UITextView!
     
+    // 変換後文字列
     @IBOutlet private weak var label: UILabel!
     
     var convertToFuriganaModel: ConvertToFuriganaModel!
@@ -33,20 +35,32 @@ class FirstViewController: UIViewController {
         self.convertToFuriganaModel.removeDelegate(className: String(describing: type(of: self)))
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    // ルビを振る処理
     @IBAction func convFurigana() {
-        if let text = self.textField.text {
+        if let text = self.textView.text {
             self.convertToFuriganaModel.convertToFurigana(sentence: text)
         }
     }
-
+    
+    // クリップボードへコピー
+    @IBAction func copyText() {
+        UIPasteboard.general.string = label.text
+    }
 }
 
-extension FirstViewController: ConvertToFuriganaDelegate {
+extension MainViewController: ConvertToFuriganaDelegate {
     func onSuccess(furigana: String) {
         self.label.text = furigana
     }
     
     func onFailure(error: Error?) {
+        let alert: UIAlertController = UIAlertController(title: "通信エラー", message: "ルビを触れませんでした。", preferredStyle:  UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default))
         
+        present(alert, animated: true, completion: nil)
     }
 }
