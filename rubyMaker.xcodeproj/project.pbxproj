@@ -21,6 +21,7 @@
 		270D62C122632F8800071F33 /* ApiRequestEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D62C022632F8800071F33 /* ApiRequestEntity.swift */; };
 		270D62D12263506E00071F33 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 270D62D02263506E00071F33 /* Settings.bundle */; };
 		270D62D322636CD700071F33 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D62D222636CD700071F33 /* BaseModel.swift */; };
+		270D62D7226AD6E200071F33 /* FuriganaApi.plist in Resources */ = {isa = PBXBuildFile; fileRef = 270D62D6226AD6E200071F33 /* FuriganaApi.plist */; };
 		2789EB4322624228006905B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2789EB4222624228006905B2 /* AppDelegate.swift */; };
 		2789EB4522624228006905B2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2789EB4422624228006905B2 /* FirstViewController.swift */; };
 		2789EB4722624228006905B2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2789EB4622624228006905B2 /* SecondViewController.swift */; };
@@ -65,6 +66,7 @@
 		270D62C022632F8800071F33 /* ApiRequestEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestEntity.swift; sourceTree = "<group>"; };
 		270D62D02263506E00071F33 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		270D62D222636CD700071F33 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		270D62D6226AD6E200071F33 /* FuriganaApi.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FuriganaApi.plist; sourceTree = "<group>"; };
 		2789EB3F22624228006905B2 /* rubyMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rubyMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2789EB4222624228006905B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2789EB4422624228006905B2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				270D62D02263506E00071F33 /* Settings.bundle */,
 				2789EB4B22624229006905B2 /* Assets.xcassets */,
 				2789EB5022624229006905B2 /* Info.plist */,
+				270D62D6226AD6E200071F33 /* FuriganaApi.plist */,
 			);
 			path = resource;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				270D62D12263506E00071F33 /* Settings.bundle in Resources */,
 				2789EB4F22624229006905B2 /* LaunchScreen.storyboard in Resources */,
 				2789EB4C22624229006905B2 /* Assets.xcassets in Resources */,
+				270D62D7226AD6E200071F33 /* FuriganaApi.plist in Resources */,
 				2789EB4A22624228006905B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

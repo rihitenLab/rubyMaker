@@ -31,7 +31,7 @@ class ConvertToFuriganaModel: BaseModel<ConvertToFuriganaDelegate> {
         }
         
         let api = FuriganaApi()
-        api.convertToFurigana(sentence: sentence, grade: 1, success: onSuccess, failure: onFailure)
+        api?.convertToFurigana(sentence: sentence, grade: 1, success: onSuccess, failure: onFailure)
     }
     
     
