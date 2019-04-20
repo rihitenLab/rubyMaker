@@ -13,7 +13,16 @@ class RealmAccessor<T: Object> {
     
     typealias Entity = T
     
-    var realm: Realm { return try! Realm() }
+    private var fileName: String!
     
-    init() {}
+    var realm: Realm {
+        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+        let path = paths[0] + "/" + fileName + ".realm"
+        let url = URL(fileURLWithPath: path)
+        return try! Realm(fileURL: url)
+    }
+    
+    init(fileName: String) {
+        self.fileName = fileName
+    }
 }

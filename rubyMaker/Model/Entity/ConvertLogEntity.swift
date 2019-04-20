@@ -10,9 +10,12 @@ import Foundation
 import RealmSwift
 
 class ConvertlogEntity: Object {
-    @objc dynamic var id : Int64 = 0
-    @objc dynamic var srcStr: String = ""
-    @objc dynamic var convStr: String = ""
+    @objc dynamic var surface: String = ""
+    @objc dynamic var furigana: String = ""
     @objc dynamic var createDate: Date = Date()
+    
+    override static func primaryKey() -> String? {
+        return "surface"
+    }
 }
 

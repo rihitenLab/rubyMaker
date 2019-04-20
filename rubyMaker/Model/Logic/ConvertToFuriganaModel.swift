@@ -16,8 +16,13 @@ protocol ConvertToFuriganaDelegate {
 class ConvertToFuriganaModel: BaseModel<ConvertToFuriganaDelegate> {
     
     func convertToFurigana(sentence: String) {
+        let convertLogAccessor = ConvertLogAccessor()
+        
         let onSuccess: (String) -> Void = {
             furigana in
+            
+            convertLogAccessor.save(surface: sentence, furigana: furigana)
+            
             for (_, delegate) in super.delegates {
                 delegate.onSuccess(furigana: furigana)
             }
@@ -28,6 +33,11 @@ class ConvertToFuriganaModel: BaseModel<ConvertToFuriganaDelegate> {
             for (_, delegate) in super.delegates {
                 delegate.onFailure(error: error)
             }
+        }
+        
+        if let converLogEntity = convertLogAccessor.get(surface: sentence) {
+            onSuccess(converLogEntity.furigana)
+            return
         }
         
         let api = FuriganaApi()
